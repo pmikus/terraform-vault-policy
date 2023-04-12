@@ -1,4 +1,4 @@
-data "vault_policy_document" "policy_document" {
+data "vault_policy_document" "this" {
   rule {
     capabilities = ["update"]
     description  = "Allow creating tokens under nomad-cluster token role."
@@ -34,9 +34,14 @@ data "vault_policy_document" "policy_document" {
     description  = "Allow our own token to be renewed."
     path         = "auth/token/renew-self"
   }
+  rule {
+    capabilities = ["update"]
+    description  = "Allow PKI issuer."
+    path         = "pki/issue/*"
+  }
 }
 
-resource "vault_policy" "policy" {
+resource "vault_policy" "this" {
   name   = var.policy_name
-  policy = data.vault_policy_document.policy_document.hcl
+  policy = data.vault_policy_document.this.hcl
 }

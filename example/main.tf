@@ -1,5 +1,5 @@
 module "vault_policy" {
   source = "../"
 
-  policy_name = "nomad-server"
+  policy_name = "nomad-cluster"
 }

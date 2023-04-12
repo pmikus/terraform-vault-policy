@@ -1,7 +1,16 @@
 # vault_policy
 
 variable "policy_name" {
-  default     = "policy"
-  description = "The name of the policy."
+  description = "(Required)" #Name of the policy
   type        = string
 }
+
+#variable "policy_namespace" {
+#  description = "(Optional)" #Target namespace. (requires Enterprise)
+#  type        = string
+#}
+
+#variable "policy_policy" {
+#  description = "(Required)" #The policy document
+#  type        = string
+#}

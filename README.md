@@ -20,16 +20,20 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [vault_policy.policy](https://registry.terraform.io/providers/hashicorp/vault/3.14.0/docs/resources/policy) | resource |
-| [vault_policy_document.policy_document](https://registry.terraform.io/providers/hashicorp/vault/3.14.0/docs/data-sources/policy_document) | data source |
+| [vault_policy.this](https://registry.terraform.io/providers/hashicorp/vault/3.14.0/docs/resources/policy) | resource |
+| [vault_policy_document.this](https://registry.terraform.io/providers/hashicorp/vault/3.14.0/docs/data-sources/policy_document) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_policy_name"></a> [policy\_name](#input\_policy\_name) | The name of the policy. | `string` | `"policy"` | no |
+| <a name="input_policy_name"></a> [policy\_name](#input\_policy\_name) | (Required) | `string` | n/a | yes |
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_policy_id"></a> [policy\_id](#output\_policy\_id) | n/a |
+| <a name="output_policy_name"></a> [policy\_name](#output\_policy\_name) | n/a |
+| <a name="output_policy_policy"></a> [policy\_policy](#output\_policy\_policy) | n/a |
 <!-- END_TF_DOCS -->
