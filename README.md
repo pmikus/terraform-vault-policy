@@ -21,13 +21,13 @@ No modules.
 | Name | Type |
 |------|------|
 | [vault_policy.this](https://registry.terraform.io/providers/hashicorp/vault/3.14.0/docs/resources/policy) | resource |
-| [vault_policy_document.this](https://registry.terraform.io/providers/hashicorp/vault/3.14.0/docs/data-sources/policy_document) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_policy_name"></a> [policy\_name](#input\_policy\_name) | (Required) | `string` | n/a | yes |
+| <a name="input_policy_name"></a> [policy\_name](#input\_policy\_name) | (Required) The name of the policy. | `string` | n/a | yes |
+| <a name="input_policy_policy"></a> [policy\_policy](#input\_policy\_policy) | (Required) String containing a Vault policy. | `string` | n/a | yes |
 
 ## Outputs
 
